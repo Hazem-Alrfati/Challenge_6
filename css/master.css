@@ -61,9 +61,23 @@ body {
     flex-direction: column;
     text-align: center;
   }
+
   .header h2 {
     margin-top: 20px;
   }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+
+  .images img {
+    max-width: calc((100% - 60px) / 3);
+    margin: 0 0 20px 0;
+  }
+
 }
 
 .page {
@@ -100,6 +114,13 @@ body {
     right: 10px;
     bottom: 10px;
     font-size: 12px;
+  }
+
+  .trophies img {
+    margin-right: 30px;
+    margin-top: 15px;
+    width: 70px;
+    height: 70px;
   }
   
 }
@@ -170,11 +191,6 @@ body {
   margin-bottom: 15px;
 }
 
-.trophies img {
-  margin-right: 30px;
-  width: 70px ;
-  height: 70px;
-}
 /* End Trophies  */
 
 /* Start Ladder */
