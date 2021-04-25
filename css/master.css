@@ -1,0 +1,197 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* End Global Rules */
+
+/* Start Components */
+  .logo {
+    width: 110px;
+    height: 40px;
+    background-color: #607d8b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  } 
+
+  hr {
+    border: none;
+    border-top: 1px solid rgb(223, 221, 221);
+    margin: 4px 0;
+  }
+
+  p {
+    color: #888;
+  }
+
+  .blue , .red , .E9 , .green {
+    font-weight: bold;
+  }
+
+  .blue {
+    color: #01a697;
+  }
+  
+  .E9 {
+    color: #e91e63;
+  }
+
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+/* End Components */
+
+@media (max-width:767px) {
+  .header {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header h2 {
+    margin-top: 20px;
+  }
+}
+
+.page {
+  background-color: #EEE;
+  padding: 10px 15px;
+}
+
+.container  {
+  background-color: #f6f6f6;
+  padding: 15px;
+  margin: auto;
+}
+
+.page .container {
+  margin-bottom: 30px;
+} 
+
+/* Start Header */
+@media (min-width:768px)
+{
+  .page .header{
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+
+  .page .container .box2 h2 {
+    margin: 0;
+  }
+
+  .page .header > div:last-child {  
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 12px;
+  }
+  
+}
+
+.page .container .box1 {
+  text-align: center;
+}
+
+.page .container .box1 img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.page .container .box1 h4 {
+  margin: 15px 0;
+}
+
+.page .container .box1 .level {
+  width: 170px;
+  height: 15px;
+  background-color: #CCC;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 0 auto 10px auto;
+  position: relative;
+}
+
+.page .container .box1 .level::before {
+  content: "";
+  position: absolute;
+  background-color: #01a697;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.page .container .box1 .nextLevel {
+  font-size: 13px;
+  color: #888;
+}
+
+.page .container .box2 .text p {
+  line-height: 1.8;
+}
+
+.page .header > div:last-child {
+  color: #888;
+}
+/* End Header */
+
+/* Start Points  */
+
+/* End Points  */
+
+/* Start Trophies  */
+.trophies .logo  {
+  margin-bottom: 15px;
+}
+
+.trophies img {
+  margin-right: 30px;
+  width: 70px ;
+  height: 70px;
+}
+/* End Trophies  */
+
+/* Start Ladder */
+
+/* End Ladder */
+
+/* Start Power */
+.power .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.power .row p {
+  margin: 0;
+  margin: 10px 0;
+}
+
+
+/* End Power */
