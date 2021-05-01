@@ -57,9 +57,6 @@ body {
 
 @media (max-width:767px) {
   .header {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
     text-align: center;
   }
 
@@ -71,7 +68,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
   }
 
   .images img {
@@ -90,11 +86,8 @@ body {
   background-color: #f6f6f6;
   padding: 15px;
   margin: auto;
-}
-
-.page .container {
   margin-bottom: 30px;
-} 
+}
 
 /* Start Header */
 @media (min-width:768px)
@@ -147,7 +140,6 @@ body {
 .page .container .box1 .level {
   width: 170px;
   height: 15px;
-  background-color: #CCC;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -155,16 +147,10 @@ body {
   -o-border-radius: 5px;
   margin: 0 auto 10px auto;
   position: relative;
-}
-
-.page .container .box1 .level::before {
-  content: "";
-  position: absolute;
-  background-color: #01a697;
-  width: 80%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  background-image: linear-gradient(to right,
+  #01a697 80%,
+  #CCC 80%
+  );
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -209,6 +195,5 @@ body {
   margin: 0;
   margin: 10px 0;
 }
-
 
 /* End Power */
